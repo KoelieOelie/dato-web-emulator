@@ -1,3 +1,15 @@
-<div class="page-header">
-	<h1>Create New Puzzle</h1>
-</div>
+<div id="controlSection">
+	 BPM:<input id="bpm" type="range" min="10" max="200" value="120">
+	 gate time:<input id="gateTime" type="range" min="10" max="200" value="100">
+	 <button id="bootloaderButton" onclick="rebootBootloader()">REBOOT</button>
+	 <label for="outputPortSelector">output:</label>
+	 <select id="outputPortSelector"></select>
+	</div>
+
+	<div id="sequencerSection">
+		<button id="startButton" onclick="toggleClock();"><img src="button_play.svg"></button>
+		<div id="sequencerButtons"></div>
+	</div>
+	<div id="keyboardSection">
+		<div id="keyboardButtons"></div>
+	</div>

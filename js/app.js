@@ -6,6 +6,10 @@ angularApp.config(function($routeProvider){
 			templateUrl: 'main.html',
 			controller: 'mainController'
 		})
+		.when('/io', {
+			templateUrl: 'io.html',
+			controller: 'ioController'
+		})
 		.when('/about', {
 			templateUrl: 'about.html',
 			controller: 'aboutController'
